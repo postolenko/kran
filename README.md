@@ -1,1 +1,1 @@
-# http://postolenko.github.io/kran/index.html
+# http://postolenko.github.io/kran/cabinet_park_subs.html
