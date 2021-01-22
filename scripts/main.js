@@ -28,5 +28,18 @@
     j.preventDefault();
   });
 
+
+  $(".del_tag").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".file_tag");
+    parent.remove();
+  });
+
+  $(".del_btn").on("click", function(e) {
+    e.preventDefault();
+    parent = $(this).closest(".message_row");
+    parent.remove();
+  });
+
 })(jQuery);
 

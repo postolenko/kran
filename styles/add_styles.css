@@ -456,11 +456,337 @@
 	margin-left: 5px;
 }
 
+
+/*-- Cabinet Profile --*/
+
+.main-title.no_border {
+	padding: 15px 28px;
+	border-bottom: 0;
+}
+
+.profile_templ {
+    padding: 0 28px 107px 28px;
+}
+
+.profile_box {
+	display: flex;
+	display: -webkit-flex;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+    padding: 3px 0 42px 0;
+}
+
+.profile_box .col:nth-child(1) {
+	width: 41%;
+}
+
+.profile_box .col:nth-child(2) {
+	width: 59%;
+}
+
+.profile_photo p {
+	margin: 12px 0;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, .5);
+}
+
+.photo_box {
+	display: block;
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	position: relative;
+}
+
+.photo_box img {
+	display: block;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+
+.files_tags {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	margin: -13px -13px 35px -13px;
+}
+
+.files_tags > .file_tag {
+	margin: 5px 13px;
+}
+
+.file_tag {
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+	background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+	padding: 5px 35px 5px 17px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	align-items: center;
+	letter-spacing: 1px;
+	color: #000000;
+	position: relative;
+}
+
+.del_tag {
+	display: block;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: none;
+	background-image: url(../img/del_tag.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.file_tag .del_tag {
+	position: absolute;
+    top: 7px;
+    right: 6px;
+}
+
+/*-- /Cabinet Profile --*/
+
+/*-- Cabinet Answer Form --*/
+
+.title_wrapp {
+    margin: 0 -15px 26px -15px;
+	padding: 10px 15px 21px 15px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.title_wrapp h3 {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.btn--accordion_2 {
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.form_inner {
+	padding-left: 51px;
+}
+
+.input--medium_4 .input__elem {
+	max-width: 238px;
+}
+
+.checkbox_two_cols {
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 14px;
+}
+
+.checkbox_two_cols > .col_1 {
+	width: 32px;
+	position: relative;
+}
+
+.checkbox_two_cols > .col_2 {
+	width: calc(100% - 32px);
+}
+
+.checkbox_two_cols > .col_1 .checkbox_wrapp {
+	position: absolute;
+	top: 33px;
+	left: 0;
+}
+
+.input .descript {
+	margin: 7px 0;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(0, 0, 0, .5);
+}
+
+.total_price .input__label {
+	font-weight: 600;
+	color: #000000;
+}
+
+.total_price .checkbox_two_cols {
+    margin-bottom: 1px;
+}
+
+.total_price_input {
+    padding: 28px 0 20px;
+}
+
+/*-- /Cabinet Answer Form --*/
+
+/*-- Cabinet Messages --*/
+
+.messages_templ {
+	padding: 0 28px 55px 28px;
+}
+
+.header_two_cols {
+	display: flex;
+	display: -webkit-flex;
+	padding: 13px 0;
+}
+
+.header_two_cols > .col_1 {
+	width: 40%;
+}
+
+.header_two_cols > .col_2 {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	width: 60%;
+}
+
+.messages_table {
+	border-top: 1px solid rgba(0,0,0,.1);
+	margin: 33px -28px 248px -28px;
+}
+
+.message_row {
+	display: flex;
+	display: -webkit-flex;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding: 12px 50px 12px 28px;
+}
+
+.message_row:nth-child(even) {
+	background: #F9FAFA;
+}
+
+.message_row > .cell:nth-child(1) {
+	width: 35%;
+}
+
+.message_row > .cell:nth-child(2) {
+	width: 65%;
+}
+
+.message_row h3 {
+	margin: 0;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.message_row p {
+	margin: 0;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 14px;
+	color: #000000;
+	opacity: .5;
+}
+
+.crane_name {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.crane_name > div:nth-child(1) {
+	width: 30px;
+}
+
+.crane_name > div:nth-child(2) {
+	width: calc(100% - 30px);
+}
+
+.crane_name .icon_box {
+	width: 20px;
+	height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.crane_name .icon_box img {
+	display: block;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.del_btn {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: url(../img/del.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.message_row .del_btn {
+	position: absolute;
+	top: 50%;
+	right: 28px;
+	margin-top: -10px;
+}
+
+.form_2_wrapp .form--row {
+    margin-bottom: 26px;
+}
+
+.form_2_wrapp .form--row:last-child {
+	margin-top: -13px;
+}
+
+/*-- /Cabinet Messages --*/
+
+
+
+@media only screen and (max-width: 900px) {
+
+/*-- Cabinet Messages --*/
+
+.messages_table {
+	margin: 33px -28px 100px -28px;
+}
+
+/*-- /Cabinet Messages --*/
+
+}
+
+
 @media only screen and (max-width: 785px) {
 
 	.table_wrapp {
 	    margin: 0 -16px;
 	}
+
+/*-- Cabinet Messages --*/
+
+.form--row .input_4 {
+	width: 100%;
+}
+
+/*-- /Cabinet Messages --*/
 
 }
 
@@ -485,6 +811,58 @@
 		max-width: 100%;
 		margin: 0 0 24px;
 	}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+	/*-- Cabinet Profile --*/
+
+	.profile_box {
+		display: block;
+	    padding: 3px 0 30px 0;
+	}
+
+	.profile_box .col:nth-child(1) {
+	    width: 100%;
+	}
+
+	.profile_box .col:nth-child(2) {
+	    width: 100%;
+	    padding-top: 20px;
+	}
+
+	/*-- /Cabinet Profile --*/
+
+	/*-- Cabinet Answer Form --*/
+
+	.form_inner {
+	    padding-left: 15px;
+	}
+
+	/*-- /Cabinet Answer Form --*/
+
+	/*-- Cabinet Messages --*/
+
+	.header_two_cols {
+		display: block;
+	}
+
+	.header_two_cols > .col_1,
+	.header_two_cols > .col_2 {
+	    width: 100%;
+	}
+
+	.header_two_cols > .col_2 {
+	    justify-content: flex-start;
+	    -webkit-justify-content: flex-start;
+	}
+
+	.messages_table {
+	    margin: 25px -28px;
+	}
+
+	/*-- /Cabinet Messages --*/
 
 }
 
@@ -517,5 +895,52 @@
 	    padding: 5px 0;
 	    width: 100%;
 	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	/*-- Cabinet Profile --*/
+
+	.btn--submit_2 {
+		font-size: 13px;
+	}
+
+	/*-- /Cabinet Profile --*/
+
+	/*-- Cabinet Answer Form --*/
+
+	.form_inner {
+	    padding-left: 0;
+	}
+
+	.message_row {
+	    padding-right: 30px;
+	}
+
+	.message_row .del_btn {
+	    right: 10px;
+	}
+
+	/*-- /Cabinet Answer Form --*/
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	/*-- Cabinet Answer Form --*/
+
+	.message_row {
+		display: block;
+		padding: 5px 30px 5px 28px;
+	}
+
+	.message_row > .cell:nth-child(1),
+	.message_row > .cell:nth-child(2) {
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	/*-- /Cabinet Answer Form --*/
 
 }
