@@ -28,8 +28,8 @@
     j.preventDefault();
   });
 
+  // ----------
 
-  // $(".file_tag button").on("click", function(e) {
   $(document).on("click", ".file_tag button", function(e) {
     e.preventDefault();
     parent = $(this).closest(".file_tag");
@@ -42,14 +42,9 @@
     parent.remove();
   });
 
+  // ----------
 
-  // По одному файлу
-  // document.querySelector('#attach-contact').addEventListener("change", (e) => addFile(e.target.files[0].name));
-
-  // Несколько файлов
   document.querySelector('#attach-contact-multiple').addEventListener("change", (e) => Array.from(e.target.files).forEach(file => addFile(file.name)));
-
-
   function addFile(fileName) {
     let div = document.createElement('div');
     div.className = "file_tag";
