@@ -4,3 +4,4 @@
 # http://postolenko.github.io/kran/answer.html
 # http://postolenko.github.io/kran/messages.html
 # http://postolenko.github.io/kran/info_chat.html
+# http://postolenko.github.io/kran/profile_info.html
