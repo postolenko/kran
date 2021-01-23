@@ -535,7 +535,7 @@
 	position: relative;
 }
 
-.del_tag {
+.file_tag button {
 	display: block;
 	width: 17px;
 	height: 17px;
@@ -549,7 +549,7 @@
 	background-size: contain;
 }
 
-.file_tag .del_tag {
+.file_tag button {
 	position: absolute;
     top: 7px;
     right: 6px;
